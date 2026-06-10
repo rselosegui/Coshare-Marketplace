@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Platforms — AI-Assisted Asset Marketplace
 
-# Run and deploy your AI Studio app
+Platforms is a marketplace prototype for discovering, comparing, and transacting 
+high-value shared assets — built on the Gemini API and designed as a technical 
+foundation for co-ownership and asset-sharing models in the GCC market.
 
-This contains everything you need to run your app locally.
+## What it does
 
-View your app in AI Studio: https://ai.studio/apps/eb956845-4d70-4c58-9b6c-91b7df3ce65b
+- **AI-powered asset matching** — Gemini interprets buyer intent from natural 
+  language queries and surfaces relevant listings without requiring structured search
+- **Co-ownership calculator** — models fractional ownership splits, usage rights, 
+  and return scenarios for high-value assets (vehicles, real estate, marine)
+- **Listing intelligence** — AI-generated descriptions and valuation context for 
+  each asset, reducing the cognitive load of comparison shopping
+- **Regulatory awareness layer** — surfaces jurisdiction-specific considerations 
+  (RTA, DMCA, UAE property law) relevant to each asset category
 
-## Run Locally
+## Why I built it
 
-**Prerequisites:**  Node.js
+I'm building Coshare.ai — a UAE-based platform for sharing, swapping, and 
+co-owning high-value assets. Platforms is the technical sandbox where I prototype 
+and stress-test the AI-assisted discovery and transaction flows before they go 
+into production. Building it myself means I understand the product constraints 
+from the inside, not just the commercial ones.
 
+## Tech stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend:** React + TypeScript (Vite)
+- **AI layer:** Google Gemini API
+- **Deployment:** Vercel
+
+## Run locally
+
+```bash
+npm install
+GEMINI_API_KEY=your_key_here
+npm run dev
+```
+
+## Status
+
+Active prototype. Core marketplace flow functional. Payment and smart contract 
+integration layer in scoping.
